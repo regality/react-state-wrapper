@@ -21,7 +21,6 @@ export default class DataStore {
   }
 
   remove (path) {
-    console.log('this.data before remove', this.data)
     this.data = produce(this.data, draft => {
       unset(draft, path)
       let parentPath = [ ...path ]
@@ -30,7 +29,6 @@ export default class DataStore {
         set(draft, parentPath, filter(get(draft, parentPath)))
       }
     })
-    console.log('this.data after remove', this.data)
   }
 
   modify(path, fn) {

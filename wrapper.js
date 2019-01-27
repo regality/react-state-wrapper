@@ -18,7 +18,6 @@ export default class Wrapper extends Component {
     }
     const dataStore = new DataStore(this.props.initialState)
     const store = new StoreClass(dataStore, [], () => {
-      console.trace('setting state', store.get())
       this.setState({ store: store })
     }, storeClasses)
     this.state = {
