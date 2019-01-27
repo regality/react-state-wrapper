@@ -1,0 +1,12 @@
+{
+  "name": "react-state-wrapper",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/regality/react-state-wrapper",
+  "author": "Adam Blackburn",
+  "license": "MIT",
+  "dependencies": {
+    "immer": "1.12.1",
+    "lodash": "4.17.11"
+  }
+}
